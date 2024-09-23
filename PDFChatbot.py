@@ -10,6 +10,12 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain_community.callbacks import get_openai_callback
 from langchain.prompts import (ChatPromptTemplate,HumanMessagePromptTemplate,SystemMessagePromptTemplate)
 
+from helper_functions.utility import check_password  
+
+ # Check if the password is correct.  
+if not check_password():  
+    st.stop()
+
 bot_template = '''
 <div class="chat-message bot">
     <p class="seperator"> ChatBot: </p>

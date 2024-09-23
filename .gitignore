@@ -19,3 +19,6 @@ dist/
 .vscode/
 # PyCharm
 .idea/
+
+# Streamlit
+.streamlit/secrets.toml
