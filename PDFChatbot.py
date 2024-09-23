@@ -13,7 +13,7 @@ from langchain.prompts import (ChatPromptTemplate,HumanMessagePromptTemplate,Sys
 from helper_functions.utility import check_password  
 
  # Check if the password is correct.  
-if not check_password():  
+if not check_password():
     st.stop()
 
 bot_template = '''
